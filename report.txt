@@ -1,0 +1,20 @@
+Номер задания: 5
+
+Количество файлов: 14 (не включая этот)
+
+Из них:
+1) Заголовочных файлов: 6
+2) Исполняемых файлов: 7
+3) Других файлов: 1
+
+Общий вес собранного решения: ~45МБ
+
+Используемые типы:
+
+1) сontainer: 4 (max_length) + 4 (length) + 200000 (containerInstance) = 200008 байт
+2) matrix: 4 (key) + 4 (keyInstance) + 12 (Instance одной из матриц) = 20 байт
+3) normalMatrix: 4 (dimension) + 8 (**matrix) = 12 байт
+4) diagonalMatrix: 4 (dimension) + 8 (*diagonalValues) = 12 байт
+5) lowerTriangularMatrix: 4 (dimension) + 8 (*lowerTriangularValues) = 12 байт
+
+Всё, кроме массивов матриц и контейнера в стаке (а они в куче)
